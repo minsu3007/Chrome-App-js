@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(44, 42, 170);
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
