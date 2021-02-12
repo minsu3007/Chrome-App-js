@@ -1,9 +1,44 @@
 body {
-  background-color: rgb(44, 42, 170);
+  background-color: #2a3c3d;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.clicked {
-  color: #7f8c8d;
+ul {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+button {
+  margin: 0px 7px;
+}
+
+.weather {
+  font-size: 32px;
+  color: rgb(166, 165, 170);
+  font-weight: 800;
+  position: relative;
+  top: 150px;
+}
+
+.js-clock {
+  font-size: 36px;
+}
+
+.input-form {
+  margin: 10px 10px;
+  width: 400px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.user-name {
+  font-size: 32px;
+  margin: 0px;
 }
 
 .btn {
@@ -17,4 +52,23 @@ body {
 
 .showing {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
